@@ -168,7 +168,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .projects, .skills, .teams, .contact, footer {
+.about, .projects, .skills, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -269,18 +269,18 @@ section .title::after {
 
 /* Projects section styling */
 
-.projects, .teams {
+.projects, .contact {
     color:#FFF;
     background: #111;
 }
 
 .projects .title::before, 
-.teams .title::before {
+.contact .title::before {
     background: #FFF;
 }
 
 .projects .title::after,
-.teams .title::after  {
+.contact .title::after  {
     background: #111;
     content: "what i created"
 }
@@ -418,80 +418,6 @@ section .title::after {
 }
 
 
-/* teams section styling */
-
-.teams .title::after {
-    content: "who with me";
-}
-
-.teams .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover {
-    background: #E1AD01;
-}
-
-.teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.teams .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.teams .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.teams .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #E1AD01;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover img {
-    border-color: #FFF;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #E1AD01!important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot.active:hover {
-    background: #E1AD01!important;
-}
-
-
 /* contact section styling */
 .contact .title::after {
     content: "get in touch";
@@ -535,11 +461,11 @@ section .title::after {
 }
 
 .contact .contact-content .row .info .sub-title {
-    color: #333;
+    color: #FFF;
 }
 
 .contact .contact-content .row .info .sub-title a {
-    color: #111;
+    color: #FFF;
 }
 
 .contact .right form .fields {
