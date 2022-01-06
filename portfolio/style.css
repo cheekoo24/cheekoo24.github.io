@@ -533,9 +533,9 @@ section .title::after {
 
 /* footer section styling */
 footer {
-    background: #111;
+    background: #FFF;
     padding: 20px 23px;
-    color: #FFF;
+    color: #111;
 }
 
 footer span a {
