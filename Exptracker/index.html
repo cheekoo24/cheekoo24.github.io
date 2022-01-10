@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="max-width">
+            <div class="title">Expense Tracker</div>
+            <div class="input-data">
+                <h3>Add new expense</h3><br>
+                <label for="type">Payment Type: </label>
+                <select id="type" name="type" id="type">
+                    <option value="Cash">Cash</option>
+                    <option value="Credit">Credit Card</option>
+                    <option value="Debit">Debit Card</option>
+                </select>
+                <label for="name">Item: </label>
+                <input id="name" type="text" name="name">
+                <br>
+                <label for="date">Date: </label>
+                <input id="date" type="date" name="name">
+                <label for="amount">Amount: </label>
+                <input id="amount" type="number" name="amount">
+            </div>
+            <button class="add-button" type="button" onclick="addRow()">Add new expense</button>
+            
+            <table class="table-data" id="table-data">
+                <tr>
+                    <th>Type</th>
+                    <th>Item</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

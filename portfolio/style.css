@@ -306,7 +306,7 @@ section .title::after {
 }
 
 .projects .proj-content .card i:hover {
-    transform: rotateY(180deg) scale(1.3) ;
+    transform: scale(1.3) ;
 }
 
 .projects .proj-content .card .box {
