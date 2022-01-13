@@ -152,7 +152,7 @@ footer span a:hover {
     height: 23px;
     width: 100%;
     box-shadow: var(--box-shadow);
-    border-radius: 2px;
+    border-radius: 5px;
     position: relative;
 }
 
