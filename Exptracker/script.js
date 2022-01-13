@@ -33,7 +33,7 @@ function addRow() {
     cell2.innerHTML = item.value;
     cell3.innerHTML = date.value;
     cell4.innerHTML = amount.valueAsNumber;
-    cell5.innerHTML = '<td><i id="x" class="fa fa-close" onclick="deleteRow(this)"></i></td>';
+    cell5.innerHTML = '<i id="x" class="fa fa-close" onclick="deleteRow(this)"></i>';
     
     // set the value to null after pressing the button
     type.value = null;

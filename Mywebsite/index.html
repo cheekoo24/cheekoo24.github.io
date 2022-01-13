@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- about me box -->
+        <div class="neumorphism-left">
+            <img src="images/herman.jpg">
+            <h3>Herman Redona</h3>
+            <p><span id="typing"></span></p>
+            <a href="#">about me</a>
+            <a href="/files/Resume - Herman Redona.docx">download cv</a>
+            <a href="#">hire me</a>
+        </div>
+
+        <!-- skills box -->
+        <div class="neumorphism-bot-left">
+            <p class="title">skills</p>
+
+            <!-- skills -->
+            <div class="progress">
+                <div class="bars">
+                    <div class="info">
+                        <span>Java</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line java"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML & CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project box -->
+        <div class="neumorphism-bot-right">
+            <p class="title">projects</p>
+            <div class="owl-carousel owl-theme">
+                <div class="card">
+                    <div class="box">
+                        <a href="https://github.com/cheekoo24/OCTranspo" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Android App</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://cheekoo24.github.io/portfolio/" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Web Portfolio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://cheekoo24.github.io/Exptracker/" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Expense Tracker</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- this is similar to the first 3 above -->
+                <div class="card">
+                    <div class="box">
+                        <a href="https://github.com/cheekoo24/OCTranspo" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Android App</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://cheekoo24.github.io/portfolio/" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Web Portfolio</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://cheekoo24.github.io/Exptracker/" target="_blank"><i class='fas fa-code'></i>
+                            <div class="text">Expense Tracker</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media section -->
+
+        <div class="social-title">
+            follow me
+        </div>
+        <div class="social-media">
+            <div class="share">
+                <a href="https://www.linkedin.com/in/hermanredona/" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://www.instagram.com/brherman/" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/LebrillaHerman/" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+        </div>
+
+
+        <!-- Contact section -->
+
+        <div class="contact">
+            <p class="title">contact me</p>
+            <form action="https://formsubmit.co/hermanlebrilla@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="your name" class="box">
+                <input type="email" name="email" placeholder="your email" class="box">
+                <input type="text" name="subject" placeholder="subject" class="box">
+                <textarea name="message" class="box" placeholder="your message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </div>
+
+        <!-- Analog clock  -->
+        <div class="clock">
+            <p id="time">Hour</p>
+        </div>
+
+        <!-- Calendar -->
+        <div class="calendar">
+            <p id="month">Month</p>
+            <p id="date">Date</p>
+            <p id="year">Year</p>
+            <p id="day">Day</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+        <span>Created By <a href="#">Herman Redona</a> | <span class="far fa-copyright"></span> 2022 All rights
+            reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
