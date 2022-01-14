@@ -365,7 +365,7 @@ footer span a:hover {
     border-radius: 10px;
 }
 
-.contact p.title {
+.contact-title {
     position: relative;
     left: 210px;
     width: 200px;
@@ -373,6 +373,39 @@ footer span a:hover {
     margin-top: 20px;
     font-weight: 400;
     font-size: 25px;
+    animation: blinks 3s;
+}
+
+@keyframes blinks {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact-title-active {
+    animation: blink 3s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .contact form {

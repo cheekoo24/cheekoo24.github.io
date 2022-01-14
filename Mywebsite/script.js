@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // Typing animation
     new Typed("#typing", {
         strings: ["Software Developer", "Web Developer"],
         typeSpeed: 100,
@@ -7,6 +9,7 @@ $(document).ready(function () {
     })
 
 
+    // Carousel animation
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -23,8 +26,15 @@ $(document).ready(function () {
             }
         }
     })
+
+    $('#hire').click(function() {
+        $('.contact-title').toggleClass('contact-title-active');
+    });
+
 })
 
+
+// Time and Calendar
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
