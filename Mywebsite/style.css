@@ -166,6 +166,17 @@ footer span a:hover {
     background: var(--white);
 }
 
+
+.neumorphism-bot-left .progress .line:hover::before {
+    animation: horizontal-bar 5s;
+}
+
+@keyframes horizontal-bar {
+    0% {
+        width: 0%
+    }
+}
+
 .neumorphism-bot-left .progress .java::before {
     width: 80%;
     animation: horizontal-bar-1 8s;
