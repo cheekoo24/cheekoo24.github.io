@@ -287,7 +287,7 @@ footer span a:hover {
 
 .neumorphism-bot-right .owl-carousel .card:hover {
     cursor: pointer;
-    box-shadow: var(--box-shadow), var(--box-shadow-inset);
+    box-shadow: var(--box-shadow-inset);
     transform: scale(1.05);
 }
 
@@ -380,6 +380,7 @@ footer span a:hover {
 }
 
 .contact form input[type="email"], input[type="text"], form textarea {
+    font-weight: 350;
     color: var(--white);
     padding: 10px;
     border: none;
