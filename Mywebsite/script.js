@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    var typed = new Typed("#typing", {
+    new Typed("#typing", {
         strings: ["Software Developer", "Web Developer"],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 100,
         loop: true
     })
 
@@ -27,16 +27,15 @@ $(document).ready(function () {
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const date = new Date();
-document.getElementById("month").innerHTML = months[date.getMonth()];
-document.getElementById("date").innerHTML = date.getDate();
-document.getElementById("year").innerHTML = date.getFullYear();
-document.getElementById("day").innerHTML = days[date.getDay()];
-
 
 setInterval(showTime, 1000);
 
 function showTime() {
-    const date2 = new Date();
-    document.getElementById("time").innerHTML = date2.toLocaleTimeString();
+    const date = new Date();
+    document.getElementById("time").innerHTML = date.toLocaleTimeString();
+
+    document.getElementById("month").innerHTML = months[date.getMonth()];
+    document.getElementById("date").innerHTML = date.getDate();
+    document.getElementById("year").innerHTML = date.getFullYear();
+    document.getElementById("day").innerHTML = days[date.getDay()];
 }
