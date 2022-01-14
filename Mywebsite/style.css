@@ -268,6 +268,10 @@ footer span a:hover {
 }
 
 
+.neumorphism-bot-right .owl-carousel {
+    box-shadow: var(--box-shadow);
+}
+
 .neumorphism-bot-right .owl-carousel .card {
     margin-top: 10px;
     box-shadow: var(--box-shadow);
