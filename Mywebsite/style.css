@@ -381,10 +381,6 @@ footer span a:hover {
         opacity: 0;
     }
 
-    50% {
-        opacity: .5;
-    }
-
     100% {
         opacity: 1;
     }
@@ -397,10 +393,6 @@ footer span a:hover {
 @keyframes blink {
     0% {
         opacity: 0;
-    }
-
-    50% {
-        opacity: .5;
     }
 
     100% {
