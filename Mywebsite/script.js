@@ -9,7 +9,7 @@ $(document).ready(function () {
     })
 
 
-    // Carousel animation
+    // Carousel animation for projects
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -27,6 +27,7 @@ $(document).ready(function () {
         }
     })
 
+    // hire me button animation
     $('#hire').click(function() {
         $('.contact-title').toggleClass('contact-title-active');
     });

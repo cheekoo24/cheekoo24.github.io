@@ -167,8 +167,8 @@ footer span a:hover {
 }
 
 
-.neumorphism-bot-left .progress .line:hover::before {
-    animation: horizontal-bar 5s;
+.neumorphism-bot-left .progress .line {
+    animation: horizontal-bar 6s;
 }
 
 @keyframes horizontal-bar {
@@ -305,13 +305,16 @@ footer span a:hover {
 .neumorphism-bot-right .owl-carousel .card a.text {
     color: var(--white);
     font-size: 10px;
-    font-weight: 400;
     margin: 10px 0 7px 0;
+}
+
+.neumorphism-bot-right .owl-carousel .card a {
+    font-weight: 350;
+    text-decoration: none;
 }
 
 .neumorphism-bot-right .owl-carousel .card i, a {
     color: var(--white);
-    text-decoration: none;
 }
 
 
