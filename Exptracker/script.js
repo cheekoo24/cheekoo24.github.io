@@ -17,7 +17,7 @@ function addRow() {
     var amount = document.getElementById("amount");
 
     if (type.value == '' || item.value == '' || date.value == '' || amount.value == '') {
-        alert("Please make sure you no field is empty");
+        alert("Please make sure no field is empty");
         return;
     }
 
