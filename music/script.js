@@ -250,9 +250,6 @@ function volume() {
     if (audio.ended) {
         forwardFunction();
     }
-    document.getElementById('list-0').addEventListener('click'), function () {
-        alert("Hello World!");
-    }
 }
 setInterval(volume, 500);
 
