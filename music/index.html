@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="phone p1">
+            <p class="playing">Now Playing</p>
+            <p class="album">Fearless</p>
+            <div class="box">
+                <div class="bars">
+                    <div id="bar-1" class="bar bar-1"></div>
+                    <div id="bar-2" class="bar bar-2"></div>
+                    <div id="bar-3" class="bar bar-3"></div>
+                    <div id="bar-4" class="bar bar-4"></div>
+                    <div id="bar-5" class="bar bar-5"></div>
+                    <div id="bar-6" class="bar bar-6"></div>
+                    <div id="bar-7" class="bar bar-7"></div>
+                    <div id="bar-8" class="bar bar-8"></div>
+                    <div id="bar-9" class="bar bar-9"></div>
+                    <div id="bar-10" class="bar bar-10"></div>
+                </div>
+            </div>
+            <div class="title">
+                <p class="singer">Taylor Swift</p>
+                <p id="song">Fearless</p>
+            </div>
+            <div class="audio">
+                <i id="backward" class='fa fa-step-backward'></i>
+                <i id="play" class='fa fa-play'></i>
+                <i id="forward" class='fa fa-step-forward'></i>
+            </div>
+
+            <div class="volume">
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+
+        <div class="phone p2">
+            <div class="photo">
+                <img src="images/taylor.png" alt="">
+            </div>
+            <div class="music-list">
+                <div id="list" class="vertical-menu">
+                    <!-- <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p>
+                    <p>link</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
