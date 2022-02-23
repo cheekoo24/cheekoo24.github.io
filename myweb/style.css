@@ -280,11 +280,13 @@ footer span a:hover {
 
 
 .neumorphism-bot-right .owl-carousel {
+    top: 20px;
     box-shadow: var(--box-shadow);
 }
 
 .neumorphism-bot-right .owl-carousel .card {
     margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: var(--box-shadow);
     border-radius: 100px;
     padding: 30px 20px;
@@ -299,6 +301,7 @@ footer span a:hover {
 .neumorphism-bot-right .owl-carousel .card:hover {
     cursor: pointer;
     box-shadow: var(--box-shadow-inset);
+    border-radius: 10px;
     transform: scale(1.05);
 }
 
