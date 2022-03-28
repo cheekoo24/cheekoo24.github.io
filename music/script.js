@@ -178,7 +178,7 @@ var forward = document.getElementById('forward');
 function forwardFunction() {
     pause();
     musicNo++;
-    if (musicNo == 10) {
+    if (musicNo == 25) {
         musicNo = 0;
     }
     audio = new Audio(musics[musicNo].src);
@@ -196,7 +196,7 @@ function backwardFunction() {
     pause();
     musicNo--;
     if (musicNo == -1) {
-        musicNo = 9;
+        musicNo = 24;
     }
     audio = new Audio(musics[musicNo].src);
     audio.load();
