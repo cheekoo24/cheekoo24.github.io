@@ -187,6 +187,7 @@ function forwardFunction() {
     if (isPlaying == true) {
         play();
     }
+    
 }
 forward.addEventListener('click', forwardFunction);
 
