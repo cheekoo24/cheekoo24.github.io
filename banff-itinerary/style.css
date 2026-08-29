@@ -565,7 +565,11 @@ a:hover { text-decoration: underline; }
 .poi-photo-thumb:hover { opacity: .9; transform: scale(1.025); }
 
 @media (max-width: 600px) {
-  .poi-photo-thumb { width: 180px; height: 130px; }
+  /* ~70 % of screen width per thumb — a peek of the next one hints at scrolling */
+  .poi-photo-thumb {
+    width: calc(72vw - 16px);
+    height: calc((72vw - 16px) * 0.72);
+  }
 }
 
 /* ─────────────────────────────────────────
@@ -579,8 +583,8 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 20px;
+  /* padding: top leaves room for close btn, bottom for caption */
+  padding: 56px 16px 52px;
   opacity: 0;
   pointer-events: none;
   transition: opacity .22s;
@@ -590,67 +594,78 @@ a:hover { text-decoration: underline; }
   pointer-events: all;
 }
 
+/* Image fills the available space; nav buttons float on top */
 .lb-img-wrap {
-  flex: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: calc(100vw - 160px);
-  max-height: calc(100vh - 100px);
 }
 .lb-img {
   max-width: 100%;
-  max-height: calc(100vh - 100px);
+  max-height: 100%;
   border-radius: 10px;
   box-shadow: 0 12px 48px rgba(0,0,0,.55);
   display: block;
+  object-fit: contain;
 }
 
 .lb-close {
   position: absolute;
-  top: 14px; right: 18px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.25);
+  top: 12px; right: 14px;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.3);
   border-radius: 50%;
   color: #fff;
-  font-size: 1.3rem;
-  width: 36px; height: 36px;
+  font-size: 1.2rem;
+  width: 40px; height: 40px;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   line-height: 1;
   transition: background .15s;
+  z-index: 2;
 }
-.lb-close:hover { background: rgba(255,255,255,.25); }
+.lb-close:hover { background: rgba(255,255,255,.28); }
 
+/* Nav arrows float as absolute overlays — no longer part of flex row,
+   so the image always gets the full width of the overlay */
 .lb-nav {
-  flex-shrink: 0;
-  background: rgba(255,255,255,.12);
-  border: 1.5px solid rgba(255,255,255,.25);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.3);
   color: #fff;
-  font-size: 1.9rem;
-  width: 52px; height: 52px;
+  font-size: 2rem;
+  width: 48px; height: 48px;
   border-radius: 50%;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: background .15s;
   line-height: 1;
+  z-index: 2;
 }
-.lb-nav:hover:not(:disabled) { background: rgba(255,255,255,.25); }
+#lb-prev { left: 10px; }
+#lb-next { right: 10px; }
+.lb-nav:hover:not(:disabled) { background: rgba(255,255,255,.28); }
 .lb-nav:disabled { opacity: .25; cursor: default; }
 
 .lb-caption {
   position: absolute;
-  bottom: 18px;
+  bottom: 14px;
   left: 50%; transform: translateX(-50%);
   color: #fff;
   text-align: center;
   pointer-events: none;
-  white-space: nowrap;
+  width: max-content;
+  max-width: calc(100vw - 32px);
 }
 .lb-caption-name {
   display: block;
   font-size: .92rem;
   font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0,0,0,.6);
 }
 .lb-caption-count {
   display: block;
